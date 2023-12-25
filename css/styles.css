@@ -731,8 +731,8 @@ video {
 }
 
 .navimg{
-  height:60px;
-  width:70px
+  height:80px;
+  width:80px
 }
 
 /* @media (max-width:843){
@@ -3852,12 +3852,12 @@ textarea.form-control-lg {
 
 .navbar {
   --bs-navbar-padding-x: 0;
-  --bs-navbar-padding-y: 0.5rem;
+  /* --bs-navbar-padding-y: 0.5rem; */
   --bs-navbar-color: rgba(0, 0, 0, 0.55);
   --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
   --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
   --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
-  --bs-navbar-brand-padding-y: 0.3125rem;
+  /* --bs-navbar-brand-padding-y: 0.3125rem; */
   --bs-navbar-brand-margin-end: 1rem;
   --bs-navbar-brand-font-size: 1.25rem;
   --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
@@ -11089,6 +11089,16 @@ header.masthead h1, header.masthead .h1 {
   position: relative;
   display: block;
 }
+
+#portfolio .container-fluid .portfolio-box2, #portfolio .container-sm .portfolio-box2, #portfolio .container-md .portfolio-box2, #portfolio .container-lg .portfolio-box2, #portfolio .container-xl .portfolio-box2, #portfolio .container-xxl .portfolio-box2 {
+  position: relative;
+  display: block;
+}
+
+#portfolio .container-fluid .portfolio-box3, #portfolio .container-sm .portfolio-box3, #portfolio .container-md .portfolio-box3, #portfolio .container-lg .portfolio-box3, #portfolio .container-xl .portfolio-box3, #portfolio .container-xxl .portfolio-box3 {
+  position: relative;
+  display: block;
+}
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption, #portfolio .container-sm .portfolio-box .portfolio-box-caption, #portfolio .container-md .portfolio-box .portfolio-box-caption, #portfolio .container-lg .portfolio-box .portfolio-box-caption, #portfolio .container-xl .portfolio-box .portfolio-box-caption, #portfolio .container-xxl .portfolio-box .portfolio-box-caption {
   display: flex;
   align-items: center;
@@ -11101,7 +11111,41 @@ header.masthead h1, header.masthead .h1 {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 98, 58, 0.9);
+  background: rgba(244, 98, 58, 0.7);
+  transition: opacity 0.25s ease;
+  text-align: center;
+}
+
+#portfolio .container-fluid .portfolio-box2 .portfolio-box2-caption, #portfolio .container-sm .portfolio-box2 .portfolio-box2-caption, #portfolio .container-md .portfolio-box2 .portfolio-box2-caption, #portfolio .container-lg .portfolio-box2 .portfolio-box2-caption, #portfolio .container-xl .portfolio-box2 .portfolio-box2-caption, #portfolio .container-xxl .portfolio-box2 .portfolio-box2-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(244, 98, 58, 0.5);
+  transition: opacity 0.25s ease;
+  text-align: center;
+}
+
+#portfolio .container-fluid .portfolio-box3 .portfolio-box3-caption, #portfolio .container-sm .portfolio-box3 .portfolio-box3-caption, #portfolio .container-md .portfolio-box3 .portfolio-box3-caption, #portfolio .container-lg .portfolio-box3 .portfolio-box3-caption, #portfolio .container-xl .portfolio-box3 .portfolio-box3-caption, #portfolio .container-xxl .portfolio-box3 .portfolio-box3-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(244, 98, 58, 0.2);
   transition: opacity 0.25s ease;
   text-align: center;
 }
@@ -11111,15 +11155,52 @@ header.masthead h1, header.masthead .h1 {
   font-weight: 600;
   text-transform: uppercase;
 }
+
+#portfolio .container-fluid .portfolio-box2 .portfolio-box2-caption .project-category, #portfolio .container-sm .portfolio-box2 .portfolio-box2-caption .project-category, #portfolio .container-md .portfolio-box2 .portfolio-box2-caption .project-category, #portfolio .container-lg .portfolio-box2 .portfolio-box2-caption .project-category, #portfolio .container-xl .portfolio-box2 .portfolio-box2-caption .project-category, #portfolio .container-xxl .portfolio-box2 .portfolio-box2-caption .project-category {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#portfolio .container-fluid .portfolio-box3 .portfolio-box3-caption .project-category, #portfolio .container-sm .portfolio-box3 .portfolio-box3-caption .project-category, #portfolio .container-md .portfolio-box3 .portfolio-box3-caption .project-category, #portfolio .container-lg .portfolio-box3 .portfolio-box3-caption .project-category, #portfolio .container-xl .portfolio-box3 .portfolio-box3-caption .project-category, #portfolio .container-xxl .portfolio-box3 .portfolio-box3-caption .project-category {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-name {
+  font-size: 1.2rem;
+}
+
+#portfolio .container-fluid .portfolio-box2 .portfolio-box2-caption .project-name, #portfolio .container-sm .portfolio-box2 .portfolio-box2-caption .project-name, #portfolio .container-md .portfolio-box2 .portfolio-box2-caption .project-name, #portfolio .container-lg .portfolio-box2 .portfolio-box2-caption .project-name, #portfolio .container-xl .portfolio-box2 .portfolio-box2-caption .project-name, #portfolio .container-xxl .portfolio-box2 .portfolio-box2-caption .project-name {
+  font-size: 1.2rem;
+}
+
+#portfolio .container-fluid .portfolio-box3 .portfolio-box3-caption .project-name, #portfolio .container-sm .portfolio-box3 .portfolio-box3-caption .project-name, #portfolio .container-md .portfolio-box3 .portfolio-box3-caption .project-name, #portfolio .container-lg .portfolio-box3 .portfolio-box3-caption .project-name, #portfolio .container-xl .portfolio-box3 .portfolio-box3-caption .project-name, #portfolio .container-xxl .portfolio-box3 .portfolio-box3-caption .project-name {
   font-size: 1.2rem;
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
 
+#portfolio .container-fluid .portfolio-box2:hover .portfolio-box2-caption, #portfolio .container-sm .portfolio-box2:hover .portfolio-box2-caption, #portfolio .container-md .portfolio-box2:hover .portfolio-box2-caption, #portfolio .container-lg .portfolio-box2:hover .portfolio-box2-caption, #portfolio .container-xl .portfolio-box2:hover .portfolio-box2-caption, #portfolio .container-xxl .portfolio-box2:hover .portfolio-box2-caption {
+  opacity: 1;
+}
+
+#portfolio .container-fluid .portfolio-box3:hover .portfolio-box3-caption, #portfolio .container-sm .portfolio-box3:hover .portfolio-box3-caption, #portfolio .container-md .portfolio-box3:hover .portfolio-box3-caption, #portfolio .container-lg .portfolio-box3:hover .portfolio-box3-caption, #portfolio .container-xl .portfolio-box3:hover .portfolio-box3-caption, #portfolio .container-xxl .portfolio-box3:hover .portfolio-box3-caption {
+  opacity: 1;
+}
 @media(max-width: 768px){
   #portfolio .container-fluid .portfolio-box .portfolio-box-caption, #portfolio .container-sm .portfolio-box .portfolio-box-caption, #portfolio .container-md .portfolio-box .portfolio-box-caption, #portfolio .container-lg .portfolio-box .portfolio-box-caption, #portfolio .container-xl .portfolio-box .portfolio-box-caption, #portfolio .container-xxl .portfolio-box .portfolio-box-caption {
+    opacity: 1;
+  }
+
+  #portfolio .container-fluid .portfolio-box2 .portfolio-box2-caption, #portfolio .container-sm .portfolio-box2 .portfolio-box2-caption, #portfolio .container-md .portfolio-box2 .portfolio-box2-caption, #portfolio .container-lg .portfolio-box2 .portfolio-box2-caption, #portfolio .container-xl .portfolio-box2 .portfolio-box2-caption, #portfolio .container-xxl .portfolio-box2 .portfolio-box2-caption {
+    opacity: 1;
+  }
+
+  #portfolio .container-fluid .portfolio-box3 .portfolio-box3-caption, #portfolio .container-sm .portfolio-box3 .portfolio-box3-caption, #portfolio .container-md .portfolio-box3 .portfolio-box3-caption, #portfolio .container-lg .portfolio-box3 .portfolio-box3-caption, #portfolio .container-xl .portfolio-box3 .portfolio-box3-caption, #portfolio .container-xxl .portfolio-box3 .portfolio-box3-caption {
     opacity: 1;
   }
   
@@ -11147,6 +11228,7 @@ a {
 
 .card-section {
    padding-top: 3rem;
+   padding-bottom: 4rem;
 }
 
 .card-title {
@@ -11175,7 +11257,7 @@ a {
 /* Profile card front */
 
 .profile-card {
-  height: 500px;
+  height: 350px;
   position: relative;
   perspective: 150rem;
   -moz-perspective: 150rem;
@@ -11434,4 +11516,8 @@ a {
     background-attachment: scroll;
     background-size: cover;
   }
+}
+
+.size{
+  font-size: 1rem;
 }
